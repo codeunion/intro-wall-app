@@ -7,7 +7,7 @@
 source("https://rubygems.org")  # Download our libraries from rubygems.org
 
 gem("sinatra", "~> 1.4.5")      # Sinatra is the web framework we're using
-gem("rack", "~> 1.5.2")         # This is required to fix a bug with Rack + Sinatra
+gem("rack", "~> 1.5.2")         # Required for a Sinatra-related bug fix
 gem("data_mapper")
 gem("bcrypt")
 
