@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Social Wall</title>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+    <div id="page">
+      <h1>Social Wall</h1>
+      <h2>Oh, no!  We ran into the following errors:</h2>
+      <ul>
+        <% message.errors.full_messages.each do |error_message| %>
+          <li>
+            <p>
+              <%= error_message %>
+            </p>
+          </li>
+        <% end %>
+      </ul>
+      <p>
+      Go <a href="/">back to the homepage</a> and try again.
+      </p>
+    </div>
+  </body>
+</html>
