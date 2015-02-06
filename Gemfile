@@ -8,8 +8,9 @@ source("https://rubygems.org")  # Download our libraries from rubygems.org
 
 gem("sinatra", "~> 1.4.5")      # Sinatra is the web framework we're using
 gem("rack", "~> 1.5.2")         # Required for a Sinatra-related bug fix
-gem("data_mapper")
-gem("bcrypt")
+
+gem("data_mapper")              # DataMapper lets us interact with the database
+gem("bcrypt")                   # Used for storing passwords securely
 
 # "development" refers to our local copy, running on our own computer
 group("development") do
